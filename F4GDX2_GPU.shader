@@ -1,4 +1,4 @@
-// This is my own semi-crappy pixel upscaler! It samples a 5 by 5 grid of texels and examines 4 diagnal line patterns to determine what to fill in.
+// This is my own semi-crappy pixel upscaler! It samples a 5 by 5 grid of texels and examines 4 diaganal line patterns to determine what to fill in.
 // It uses it's own original rule set. There is no anti-aliasing, could really use that implemented in it.
 //     I had to write this to get around all the GPL v3 licenses that the emulation shaders use, I've studied Eagle, ScaleFX and xBR before, but I didn't
 //     use any of the code or any of the theories they used, just made up my own.
