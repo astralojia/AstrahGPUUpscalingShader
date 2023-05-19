@@ -10,11 +10,11 @@ Import into Unity add to a Material and use on 2D artwork.
 # How It Works
 It works through diagonal lines like so: 
 
-U V W  X Y\n
-P Q R  S T
-K L Cn N O 
-F G H  I J
-A B C  D E
+U V W  X Y  
+P Q R  S T  
+K L Cn N O  
+F G H  I J  
+A B C  D E  
 
 (Cn stands for 'Center' and is the sampled Texel our Pixel is currently on, remember in the shader we can only change the current Pixel)
 
