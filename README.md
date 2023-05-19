@@ -1,7 +1,7 @@
 # Free4GameDevsX2Scaler GPU
 A free pixel-art upscaler for Unity using the Unlicense, designed specifically for game developers. Open-source and for use commercially and non-commercially, both the source and what you run through it are both completely free to modify, use and sell.
 
-![image](https://github.com/astralojia/AstrahGPUUpscalingShader/assets/36993439/713cc305-0d10-4ed3-b28a-9d1d7b150223)
+![image](https://github.com/astralojia/AstrahGPUUpscalingShader/assets/36993439/713cc305-0d10-4ed3-b28a-9d1d7b150223)  
 (Before using CPU upscaler also on this Git Repository)
 ![image](https://github.com/astralojia/AstrahGPUUpscalingShader/assets/36993439/b033ebed-0a2e-4b7c-934e-eeb1c8baf4a0)
 
