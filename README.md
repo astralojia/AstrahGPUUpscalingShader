@@ -27,7 +27,7 @@ if (J == N == R == V)
 if (D == H == L == P)
    Cn = H
    
-This only upscales with no errors X2 so you set '_ScaleFactor' to 0.5. I personally put it to 0.36 after first using the Free4GameDevsX2 CPU upscaler, which is also licensed to the public domain, and also doesn't use any previous algorithms.
+This only upscales with no problems when it's X2 so you set '_ScaleFactor' to 0.5. I personally put it to 0.36 after first using the Free4GameDevsX2 CPU upscaler, which is also licensed to the public domain, and also doesn't use any previous algorithms.
 
 # Disclaimer
 Hello, Astrah here! 
