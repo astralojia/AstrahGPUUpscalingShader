@@ -14,6 +14,9 @@ Recently for a commercial project I couldn't use XBRZ, as it has the GPL v3 lice
 I wrote my own semi-crappier upscaling algorithm I call F4GDX2 or Free 4 Game Devs X2 (yes
 an even crappier name). 
 
+The last thing I wanted to do is add a little bit of anti-aliasing or blend the texels/sub-texels, 
+but I couldn't figure out how in the small amount of time I have. 
+
 The pixel-art scaling algorithms all have GPL licenses to protect their source code. 
 They're made for the Emulation community and weren't created for the game development
 scene. The problem with the GPL license is that when you use it you need to make your
