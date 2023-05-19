@@ -1,3 +1,37 @@
+// This is my own semi-crappy pixel upscaler! It samples a 5 by 5 grid of texels and examines 4 diagnal line patterns to determine what to fill in.
+// It uses it's own original rule set. There is no anti-aliasing, could really use that implemented in it.
+//     I had to write this to get around all the GPL v3 licenses that the emulation shaders use, I've studied Eagle, ScaleFX and xBR before, but I didn't
+//     use any of the code or any of the theories they used, just made up my own.
+//     - Astrah
+
+/*
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <https://unlicense.org>
+*/
+
+
 Shader "Astrah_Graphics/F4GDX2_GPU"
 {
     Properties
@@ -126,11 +160,11 @@ Shader "Astrah_Graphics/F4GDX2_GPU"
 
                 float offsetFactor = _MainTex_TexelSize / 2;
 
-                //float4 color_A       = tex2D(_MainTex,    IN.uv_MainTex + float2(-2.0, -2.0)       * _MainTex_TexelSize * _ScaleFactor);
+                //not needed as far as I'm concenered: float4 color_A       = tex2D(_MainTex,    IN.uv_MainTex + float2(-2.0, -2.0)       * _MainTex_TexelSize * _ScaleFactor);
                 float4 color_B = tex2D(_MainTex,    IN.uv_MainTex + float2(-1.0, -2.0) * _MainTex_TexelSize * _ScaleFactor);
                 float4 color_C = tex2D(_MainTex,      IN.uv_MainTex + float2(0.0, -2.0) * _MainTex_TexelSize * _ScaleFactor);
                 float4 color_D = tex2D(_MainTex,    IN.uv_MainTex + float2(1.0, -2.0) * _MainTex_TexelSize * _ScaleFactor);
-                //float4 color_E       = tex2D(_MainTex,    IN.uv_MainTex + float2(2.0, -2.0)         * _MainTex_TexelSize * _ScaleFactor);
+                //not needed as far as I'm concerned: float4 color_E       = tex2D(_MainTex,    IN.uv_MainTex + float2(2.0, -2.0)         * _MainTex_TexelSize * _ScaleFactor);
 
                 float4 color_F = tex2D(_MainTex,    IN.uv_MainTex + float2(-2.0, -1.0) * _MainTex_TexelSize * _ScaleFactor);
                 float4 color_G = tex2D(_MainTex,      IN.uv_MainTex + float2(-1.0, -1.0) * _MainTex_TexelSize * _ScaleFactor);
