@@ -23,14 +23,14 @@ A B C  D E
 
 (Cn stands for 'Center' and is the sampled Texel our Pixel is currently on, remember in the shader we can only change the current Pixel)
 
-if (B == H == N == T) 
-   Cn = H
-if (X == R == L == F)
-   Cn = R
-if (J == N == R == V) 
-   Cn = N
-if (D == H == L == P)
-   Cn = H
+if (B == H == N == T)  
+   Cn = H  
+if (X == R == L == F)  
+   Cn = R  
+if (J == N == R == V)  
+   Cn = N  
+if (D == H == L == P)  
+   Cn = H  
    
 This only upscales with no problems when it's X2 so you set '_ScaleFactor' to 0.5. I personally put it to 0.36 after first using the Free4GameDevsX2 CPU upscaler, which is also licensed to the public domain, and also doesn't use any previous algorithms.
 
